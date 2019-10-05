@@ -56,6 +56,7 @@ def multiplicative_inverse(b, a):
     # PUT YOUR CODE HERE
     j = 0
     d = []
+    a_main=a
     if a < b:
         a, b = b, a
     while a % b != 0:
@@ -74,7 +75,7 @@ def multiplicative_inverse(b, a):
         x.append(y[i - 1])
         z = x[i - 1] - y[i - 1] * d1[i - 1]
         y.append(z)
-    return x[j - 1] - y[j - 1] * d1[j - 1]
+    return (x[j - 1] - y[j - 1] * d1[j - 1])%a_main
     # pass
 
 

@@ -31,9 +31,9 @@ def encrypt_vigenere(text, key):
             text[i] = chr(text[i])
         ciphertext = ''.join(text)
     return ciphertext
-t=input()
-k=input()
-print(encrypt_vigenere(t,k))
+# t=input()
+# k=input()
+# print(encrypt_vigenere(t,k))
 
 def decrypt_vigenere(text, key):
     """
@@ -68,6 +68,6 @@ def decrypt_vigenere(text, key):
             text[i] = chr(text[i])
         plaintext = ''.join(text)
     return plaintext
-t=input()
-k=input()
-print(decrypt_vigenere(t,k))
+# t=input()
+# k=input()
+# print(decrypt_vigenere(t,k))

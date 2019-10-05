@@ -29,8 +29,8 @@ def encrypt_caesar(s):
             s[i] = chr(s[i])
         s1 = ''.join(s)
     return s1
-string=input()
-print(encrypt_caesar(string))
+# string=input()
+# print(encrypt_caesar(string))
 
 def decrypt_caesar(s):
     """
@@ -49,8 +49,9 @@ def decrypt_caesar(s):
     if n >= 26:
         n = n - 26
     if not s:
-        print(s)
+        return s
     else:
+
         s = list(s)
         for i in range(0, len(s)):
             s[i] = ord(s[i])
@@ -63,6 +64,6 @@ def decrypt_caesar(s):
             s[i] = chr(s[i])
         s1 = ''.join(s)
     return s1
-string2=input()
-print(decrypt_caesar(string2))
+# string2=input()
+# print(decrypt_caesar(string2))
 
