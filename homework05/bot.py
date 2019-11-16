@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from time import time, localtime, strftime
 import datetime
 
-telebot.apihelper.proxy = {'https': 'https://95.168.185.183:8080'}
+# telebot.apihelper.proxy = {'https': 'https://95.168.185.183:8080'}
 
 bot = telebot.TeleBot(config.access_token)
 
@@ -166,4 +166,3 @@ def get_all_schedule(message):
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
-
